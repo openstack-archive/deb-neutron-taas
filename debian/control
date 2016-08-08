@@ -48,7 +48,7 @@ Architecture: all
 Depends: python-neutron-taas (= ${binary:Version}),
          ${misc:Depends},
          ${python:Depends},
-Description: OpenStack virtual network service - Tap-as-a-Service extension
+Description: OpenStack virtual network service - Tap-as-a-Service agent
  Neutron provides an API to dynamically request and configure virtual networks.
  These networks connect "interfaces" from other OpenStack services (such as
  vNICs from Nova VMs). The Neutron API supports extensions to provide advanced
