@@ -45,7 +45,7 @@ Description: OpenStack virtual network service - Tap-as-a-Service extension
 
 Package: neutron-taas-openvswitch-agent
 Architecture: all
-Depends: python-neutron-taas (== ${binary:Version},
+Depends: python-neutron-taas (= ${binary:Version}),
          ${misc:Depends},
          ${python:Depends},
 Description: OpenStack virtual network service - Tap-as-a-Service extension
