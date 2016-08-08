@@ -34,6 +34,7 @@ Depends: python-babel (>= 2.3.4),
          python-neutron (>= 9.0.0~),
          ${misc:Depends},
          ${python:Depends},
+Enhances: python-neutronclient
 Description: OpenStack virtual network service - Tap-as-a-Service extension
  Neutron provides an API to dynamically request and configure virtual networks.
  These networks connect "interfaces" from other OpenStack services (such as
