@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 9),
 Build-Depends-Indep: python-babel (>= 2.3.4),
                      python-coverage (>= 3.6),
                      python-hacking,
-                     python-neutron (>= 9.0.0~),
+                     python-neutron (>= 2:9.0.0~),
                      python-os-testr (>= 0.7.0),
                      python-oslosphinx (>= 2.5.0),
                      python-oslotest (>= 1.10.0),
@@ -31,7 +31,7 @@ Vcs-Git: https://anonscm.debian.org/git/openstack/neutron-taas.git
 Package: python-neutron-taas
 Architecture: all
 Depends: python-babel (>= 2.3.4),
-         python-neutron (>= 9.0.0~),
+         python-neutron (>= 2:9.0.0~),
          ${misc:Depends},
          ${python:Depends},
 Enhances: python-neutronclient,
@@ -46,7 +46,7 @@ Description: OpenStack virtual network service - Tap-as-a-Service extension
 
 Package: neutron-taas-openvswitch-agent
 Architecture: all
-Depends: neutron-common (>= 9.0.0~),
+Depends: neutron-common (>= 2:9.0.0~),
          python-neutron-taas (= ${binary:Version}),
          ${misc:Depends},
          ${python:Depends},
