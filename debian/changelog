@@ -1,5 +1,5 @@
 neutron-taas (0.0.0+git20160808.c612a729-1) UNRELEASED; urgency=medium
 
-  * Initial release (Closes: #).
+  * Initial release (Closes: #833736).
 
  -- James Page <james.page@ubuntu.com>  Tue, 17 Nov 2015 12:04:44 +0000
