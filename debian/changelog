@@ -1,5 +1,5 @@
-neutron-taas (1.0.0+git20160808.3ebae11-1) UNRELEASED; urgency=medium
+neutron-taas (0.0.0+git20160808.c612a729-1) UNRELEASED; urgency=medium
 
-  * Initial release (Closes: #833729).
+  * Initial release (Closes: #).
 
  -- James Page <james.page@ubuntu.com>  Tue, 17 Nov 2015 12:04:44 +0000
