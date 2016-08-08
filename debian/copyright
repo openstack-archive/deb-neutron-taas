@@ -1,17 +1,15 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: neutron-taas
-Source: https://github.com/openstack/neutron-taas
+Upstream-Name: tap-as-a-service
+Source: https://github.com/openstack/tap-as-a-service
 
 Files: *
 Copyright: 2011-2015, OpenStack Foundation
-           2013-2014, Hewlett-Packard Development Company, L.P
-           2013, IBM Corp
-           2010, United States Government
-           2014, Samsung Electronics
-           2015-2016, Futurewei
-           2015-2016, Huawei
-           2015, Huawei Technologies India Pvt. Ltd
-           2015, nuturewei
+           2013, Hewlett-Packard Development Company, L.P
+           2015, NEC Corporation
+           2015-2016, Midokura SARL
+           2015, Gigamon
+           2015, Ericsson AB
+           2016, VMware, Inc
 License: Apache-2.0
 
 Files: debian/*
