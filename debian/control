@@ -41,6 +41,22 @@ Description: OpenStack virtual network service - Tap-as-a-Service extension
  vNICs from Nova VMs). The Neutron API supports extensions to provide advanced
  network capabilities, including QoS, ACLs, and network monitoring.
  .
+ Tap-as-a-Service (TaaS) is an extension to the OpenStack network service
+ (Neutron). It provides remote port mirroring capability for tenant virtual
+ networks.
+ .
+ Port mirroring involves sending a copy of packets entering and/or leaving one
+ port to another port, which is usually different from the original
+ destinations of the packets being mirrored.
+ .
+ This service has been primarily designed to help tenants (or the cloud
+ administrator) debug complex virtual networks and gain visibility into their
+ VMs, by monitoring the network traffic associated with them. TaaS honors
+ tenant boundaries and its mirror sessions are capable of spanning across
+ multiple compute and network nodes. It serves as an essential infrastructure
+ component that can be utilized for supplying data to a variety of network
+ analytics and security applications (e.g. IDS).
+ .
  This package provides the Python files for the Tap-as-a-Service (TaaS)
  extension.
 
@@ -55,5 +71,21 @@ Description: OpenStack virtual network service - Tap-as-a-Service agent
  These networks connect "interfaces" from other OpenStack services (such as
  vNICs from Nova VMs). The Neutron API supports extensions to provide advanced
  network capabilities, including QoS, ACLs, and network monitoring.
+ .
+ Tap-as-a-Service (TaaS) is an extension to the OpenStack network service
+ (Neutron). It provides remote port mirroring capability for tenant virtual
+ networks.
+ .
+ Port mirroring involves sending a copy of packets entering and/or leaving one
+ port to another port, which is usually different from the original
+ destinations of the packets being mirrored.
+ .
+ This service has been primarily designed to help tenants (or the cloud
+ administrator) debug complex virtual networks and gain visibility into their
+ VMs, by monitoring the network traffic associated with them. TaaS honors
+ tenant boundaries and its mirror sessions are capable of spanning across
+ multiple compute and network nodes. It serves as an essential infrastructure
+ component that can be utilized for supplying data to a variety of network
+ analytics and security applications (e.g. IDS).
  .
  This package provides the Tap-as-a-Service agent for Open vSwitch.
