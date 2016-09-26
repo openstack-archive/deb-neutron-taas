@@ -1,3 +1,10 @@
+neutron-taas (0.0.0+git20160808.c612a729-2) UNRELEASED; urgency=medium
+
+  * d/s/options: extend-diff-ignore of .gitreview
+  * d/control: Using OpenStack's Gerrit as VCS URLs.
+
+ -- Ondřej Nový <onovy@debian.org>  Mon, 26 Sep 2016 19:04:31 +0200
+
 neutron-taas (0.0.0+git20160808.c612a729-1) experimental; urgency=medium
 
   * Initial release (Closes: #833736).
