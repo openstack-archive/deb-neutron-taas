@@ -3,6 +3,7 @@ Section: net
 Priority: optional
 Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
 Uploaders: James Page <james.page@ubuntu.com>,
+           Thomas Goirand <zigo@debian.org>,
 Build-Depends: debhelper (>= 9),
                dh-python,
                openstack-pkg-tools,
@@ -13,24 +14,26 @@ Build-Depends: debhelper (>= 9),
 Build-Depends-Indep: python-babel (>= 2.3.4),
                      python-coverage (>= 3.6),
                      python-hacking,
-                     python-neutron (>= 2:9.0.0~),
+                     python-neutron (>= 2:9.0.0~rc1),
                      python-os-testr (>= 0.7.0),
                      python-oslosphinx (>= 2.5.0),
                      python-oslotest (>= 1.10.0),
+                     python-psycopg2,
+                     python-pymysql,
                      python-testresources (>= 0.2.4),
                      python-testscenarios (>= 0.4),
                      python-testtools (>= 1.4.0),
                      subunit (>= 0.0.18),
                      testrepository (>= 0.0.18),
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: http://github.com/openstack/tap-as-a-service
-Vcs-Browser: https://anonscm.debian.org/gitweb/?p=openstack/neutron-taas.git;a=summary
-Vcs-Git: https://anonscm.debian.org/git/openstack/neutron-taas.git
+Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-neutron-taas
+Vcs-Git: https://git.openstack.org/openstack/deb-neutron-taas -b debian/newton
 
 Package: python-neutron-taas
 Architecture: all
 Depends: python-babel (>= 2.3.4),
-         python-neutron (>= 2:9.0.0~),
+         python-neutron (>= 2:9.0.0~rc1),
          ${misc:Depends},
          ${python:Depends},
 Enhances: python-neutronclient,

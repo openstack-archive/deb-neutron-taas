@@ -14,22 +14,23 @@
 # under the License.
 
 
+import sqlalchemy as sa
+from sqlalchemy import orm
+from sqlalchemy.orm import exc
+
 from neutron.db import common_db_mixin as base_db
 from neutron.db import model_base
-from neutron.db import models_v2
 from neutron import manager
 from neutron_taas.extensions import taas
 from oslo_log import log as logging
 from oslo_utils import uuidutils
-import sqlalchemy as sa
-from sqlalchemy import orm
-from sqlalchemy.orm import exc
 
 
 LOG = logging.getLogger(__name__)
 
 
-class TapService(model_base.BASEV2, models_v2.HasId, models_v2.HasTenant):
+class TapService(model_base.BASEV2, model_base.HasId,
+                 model_base.HasProjectNoIndex):
 
     # Represents a V2 TapService Object
     __tablename__ = 'tap_services'
@@ -38,7 +39,8 @@ class TapService(model_base.BASEV2, models_v2.HasId, models_v2.HasTenant):
     port_id = sa.Column(sa.String(36), nullable=False)
 
 
-class TapFlow(model_base.BASEV2, models_v2.HasId, models_v2.HasTenant):
+class TapFlow(model_base.BASEV2, model_base.HasId,
+              model_base.HasProjectNoIndex):
 
     # Represents a V2 TapFlow Object
     __tablename__ = 'tap_flows'
@@ -50,7 +52,8 @@ class TapFlow(model_base.BASEV2, models_v2.HasId, models_v2.HasTenant):
                                nullable=False)
     source_port = sa.Column(sa.String(36), nullable=False)
     direction = sa.Column(sa.Enum('IN', 'OUT', 'BOTH',
-                                  name='tapflows_direction'))
+                                  name='tapflows_direction'),
+                          nullable=False)
 
 
 class TapIdAssociation(model_base.BASEV2):

@@ -1,4 +1,5 @@
 [gerrit]
 host=review.openstack.org
 port=29418
-project=openstack/tap-as-a-service.git
+project=openstack/deb-neutron-taas.git
+defaultbranch=debian/newton
